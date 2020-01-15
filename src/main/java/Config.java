@@ -1,16 +1,34 @@
 public class Config {
-    //public static final String QUERIES = "/user/b.konstantinovskij/final/data/stem_correct_queries_1.csv";
-    //public static final String DOC_QUERIES = "/user/b.konstantinovskij/final/data/doc_queries.txt";
+    public static final String QUERIES = "/user/b.konstantinovskij/final/data/correct_queries_norm.tsv";
+    public static final String QUERIES_SET = "/user/b.konstantinovskij/final/data/queries_set.txt";
+    public static final String DOC_QUERIES = "/user/b.konstantinovskij/final/data/doc_queries.txt";
     //public static final String PATH_TMP = "/user/b.konstantinovskij/final/data/tmp.txt";
 
-    public static final String QUERIES = "/home/boris/Рабочий стол/Техносфера/Hadoop/FinalCompetition/data/stem_correct_queries.csv";
-    public static final String DOC_QUERIES = "/home/boris/Рабочий стол/Техносфера/Hadoop/FinalCompetition/data/doc_queries.txt";
-    public static final String PATH_TMP = "/home/boris/Рабочий стол/Техносфера/Hadoop/FinalCompetition/data/tmp.txt";
+    public static final String DOCS_ALL_IDF = "/user/b.konstantinovskij/final/df/idf_all.txt";
+    public static final String DOCS_ALL_ICF = "/user/b.konstantinovskij/final/cf/icf_all.txt";
+    public static final String DOCS_ALL_IDF_BI = "/user/b.konstantinovskij/final/df/idf_all_bi.txt";
+    public static final String DOCS_ALL_ICF_BI = "/user/b.konstantinovskij/final/cf/icf_all_bi.txt";
+
+    public static final String DOCS_TITLE_IDF = "/user/b.konstantinovskij/final/df/idf_title.txt";
+    public static final String DOCS_TITLE_ICF = "/user/b.konstantinovskij/final/cf/icf_title.txt";
+    public static final String DOCS_TITLE_IDF_BI = "/user/b.konstantinovskij/final/df/idf_title_bi.txt";
+    public static final String DOCS_TITLE_ICF_BI = "/user/b.konstantinovskij/final/cf/icf_title_bi.txt";
+
+    public static final String DOCS_TEXT_IDF = "/user/b.konstantinovskij/final/df/idf_text.txt";
+    public static final String DOCS_TEXT_ICF = "/user/b.konstantinovskij/final/cf/icf_text.txt";
+    public static final String DOCS_TEXT_IDF_BI = "/user/b.konstantinovskij/final/df/idf_text_bi.txt";
+    public static final String DOCS_TEXT_ICF_BI = "/user/b.konstantinovskij/final/cf/icf_text_bi.txt";
+
+    //public static final String QUERIES = "/home/boris/Рабочий стол/Техносфера/Hadoop/FinalCompetition/data/stem_correct_queries.csv";
+    //public static final String DOC_QUERIES = "/home/boris/Рабочий стол/Техносфера/Hadoop/FinalCompetition/data/doc_queries.txt";
+    //public static final String PATH_TMP = "/home/boris/Рабочий стол/Техносфера/Hadoop/FinalCompetition/data/tmp.txt";
 
     public static final double k1 = 2.0;
     public static final double b = 0.75;
     public static final double MIN = 0.0;
-    public static final double lenAllText = 4049068093.0;
+    public static final double LEN_ALL = 3778740680.0;
+    public static final double LEN_TITLE = 3922866.0;
+    public static final double LEN_TEXT = 3774817814.0;
     public static final double N = 582167;
 
     static final public String DELIMER = "%:!%";
